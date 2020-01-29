@@ -1,6 +1,10 @@
+
+# Fix einfügen Arbeitsplatz
+
 ARG DOCKER_BASE
 FROM $DOCKER_BASE
 ARG DEVICE
+
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -yq git cmake build-essential \
